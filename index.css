@@ -132,3 +132,130 @@ footer {
 span {
 	color: white;
 }
+
+/******************************************************************************
+ *  Main **********************************************************************
+ ******************************************************************************/
+
+main {
+    padding-top: 20px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 0;
+    width: 1200px;
+}
+
+section .wrapper {
+    background-color: #fff;
+    height: 473px;
+}
+
+.content {
+    float: left;
+    padding: 36px;
+    width: 768px;
+}
+
+.content h2 {
+    font: 400 1.8rem Roboto;
+}
+
+.content header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content header ul li {
+    color: #aeaeae;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 10px;
+}
+
+.content header ul li.author {
+    margin: 0;
+    color: #000;
+}
+
+.btn {
+    border-radius: 5px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.follow {
+    border: 1px solid #a7c931;
+    color: #a7c931;
+}
+.follow:hover {
+    border: 1px solid #a7c931;
+    background-color: #a7c931;
+    color: #fff;
+}
+
+.summary {
+    float: left;
+    width: 65%;
+}
+
+.rating {
+    float: left;
+}
+
+.cover {
+    float: right;
+}
+
+
+
+/******************************************************************************
+ * Section Footer *********************************************************************
+ ******************************************************************************/
+section footer {
+     clear: both;
+     margin-top: 25px;
+ }
+
+section footer ul {
+    margin: 0;
+    padding:0;
+}
+section footer li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 0px 10px 120px;
+    border-radius: 3px;
+    background-color: #333;
+}
+
+
+section footer li:first-of-type {
+    margin-left: 0;
+}
+
+.price {
+    background-color: #fff;
+    padding: 10px;   
+}
+
+section footer li:last-of-type {
+    background-color: transparent;
+    padding: 0;
+    float: right;
+}
+
+/******************************************************************************
+* Clear Fix ******************************************************************
+******************************************************************************/
+.cf:before,
+.cf:after {
+    content: '';
+    display: table;
+}
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
