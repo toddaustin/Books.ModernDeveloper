@@ -1,3 +1,9 @@
+body {
+    background-color: #f5f5f5;
+    font: 100% Roboto;
+    margin: 0 auto;
+}
+
 header {
 	background:url("./Books.MD_UI_Assets/Books.MD_UI_Assets/books_header_bg.jpg");
 	height: 25%;
@@ -7,7 +13,7 @@ header {
 #wrapper {
 	height: 100%;
 	width: 50%;
-	//border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin: 0 auto;
 	position: relative;
 }
@@ -15,16 +21,16 @@ header {
 #leftcol {
 	height: 50%;
 	width: 8%;
-	//border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin: 18px auto;
-	//background:url("./Books.MD_UI_Assets/Books.MD_UI_Assets/books.MD_logo_icon.png") no-repeat;
+	/*background:url("./Books.MD_UI_Assets/Books.MD_UI_Assets/books.MD_logo_icon.png") no-repeat;*/
 	float: left;
 }
 
 #rightcol {
 	height: 60%;
 	width: 90%;
-	//border: 1px solid black;
+	/*border: 1px solid black;*/
 	float: left;
 	margin: 20px auto;
 }
@@ -32,7 +38,7 @@ header {
 #fifty-row {
 height: 50%;
 width: 100%;
-//border: 1px solid black;
+/*border: 1px solid black;*/
 }
 
 #row-1 {
@@ -58,7 +64,7 @@ width: 100%;
 .row {
 	height: 50%;
 	width: 100%;
-	//border: 1px solid blue;
+/*	//border: 1px solid blue;*/
 }
 
 .footer-rightcol {
@@ -125,7 +131,7 @@ footer {
 #footer-wrapper {
 	height: 100%;
 	width: 100%;
-	//border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin: 0 auto;
 	position: relative;
 }
@@ -139,6 +145,13 @@ span {
 
 main {
     padding-top: 20px;
+    font-family: Roboto;
+    line-height: 1.8
+}
+
+main a {
+    color: #3183c9;
+    text-decoration: none;
 }
 
 section {
@@ -160,6 +173,11 @@ section .wrapper {
 
 .content h2 {
     font: 400 1.8rem Roboto;
+    margin: 0;
+}
+
+.content header  {
+    background-image: none;
 }
 
 .content header ul {
@@ -171,6 +189,7 @@ section .wrapper {
 .content header ul li {
     color: #aeaeae;
     display: inline-block;
+    float:none;
     font-size: 0.8rem;
     margin: 0 10px;
 }
@@ -179,6 +198,8 @@ section .wrapper {
     margin: 0;
     color: #000;
 }
+
+.author a {display: inline-block;}
 
 .btn {
     border-radius: 5px;
@@ -198,11 +219,111 @@ section .wrapper {
 
 .summary {
     float: left;
-    width: 65%;
+    width: 55%;
 }
 
 .rating {
     float: left;
+}
+
+.rating {
+    width: 300px;
+    padding: 0 20px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.rating ul:nth-child(2) {
+    margin-top: 60px;
+}
+
+.rating ul {
+    padding :0;
+}
+
+.rating li {
+    float:none;
+    font-size: .8em;
+}
+
+.rating p {
+    margin-bottom: 3px;
+    padding-left: 10px;
+    vertical-align: middle;
+
+}
+
+.rating li a {
+    color: #3183c9;
+    text-align: left;
+    padding: 5px 0px 5px 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rating li:first-of-type a {
+    border-top: none;
+}
+
+.scale p {
+    vertical-align: middle;
+    float: left;
+}
+
+.easy p {
+    color: #f7be26;
+}
+
+.comprehensive {
+    color: #75c36a;
+}
+
+.examples {
+    color: #5ac9e3;
+}
+
+.amount {
+    display: inline-block;
+   /*padding: 5px;*/
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.scale .percent {
+    float: right;
+}
+
+.easy .percent {
+    color: #f7be26;
+}
+
+.easy .amount {
+
+    color: #bf8c02;
+}
+
+.progress-container {
+    height:4px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    line-height: 0;
+}
+
+.progress-bar {
+    display: inline-block;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.easy .progress-bar {
+    background-color: #f7be26;
+}
+
+.comprehensive .progress-bar {
+    background-color: #75c36a;
+}
+
+.examples .progress-bar {
+   background-color: #5ac9e3;
+   line-height: 0
 }
 
 .cover {
@@ -217,16 +338,19 @@ section .wrapper {
 section footer {
      clear: both;
      margin-top: 25px;
+     border: 0;
+     background-color: transparent;
  }
 
 section footer ul {
     margin: 0;
     padding:0;
 }
+
 section footer li {
     display: inline-block;
     margin: 0 15px;
-    padding: 10px 0px 10px 120px;
+    padding: 0px 0px 0px 120px;
     border-radius: 3px;
     background-color: #333;
 }
@@ -246,6 +370,8 @@ section footer li:last-of-type {
     padding: 0;
     float: right;
 }
+
+
 
 /******************************************************************************
 * Clear Fix ******************************************************************
