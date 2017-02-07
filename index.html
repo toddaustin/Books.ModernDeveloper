@@ -14,8 +14,8 @@
             <h1><span class="header-textbooks">Books.</span><span class="header-textmoderndev">Modern Developer</span></h1>
             <h1 class="tag-line">The Largest Resource of Web and Mobile Development and Programming Books</h1>
             <div class="search">
-                <input type="text" placeholder="Search books by any  keyword or title..." class="txt" />
-                <button><i class="fa fa-search fa-2x"></i></button>
+                <input type="text" placeholder="Search books by any  keyword or title..." class="txt" id="searchBooksTerm" />
+                <button id="searchBooks"><i class="fa fa-search fa-2x"></i></button>
             </div>
         </div>
     </header>
@@ -94,7 +94,7 @@
                 <div class="cover"><img src="images/book-covers/eloquent-javascript.jpg" alt=""></div>
                 <div class="slideout-overlay hidden">
                     <div class="slideout">
-                        <input type="search">
+                        <input type="search"  class="searchInside">
                         <ul>
                             <li>&hellip; Eloquent <span class="search-highlight">JavaScript</span>, 2nd Edition. Copyright &copy; 2015 by Marij &hellip; <span class="page">8</span></li>
                             <li>&hellip; Language 191 PART II BROWSER Chapter 12: <span class="search-highlight">JavaScript</span> and the &hellip; <span class="page">15</span></li>
@@ -204,7 +204,7 @@
                 <div class="cover"><img src="images/book-covers/javascript-and-jquery.jpg" alt=""></div>
                 <div class="slideout-overlay hidden">
                     <div class="slideout">
-                        <input type="search">
+                        <input type="search"  class="searchInside">
                         <ul>
                             <li>&hellip; Eloquent <span class="search-highlight">JavaScript</span>, 2nd Edition. Copyright &copy; 2015 by Marij &hellip; <span class="page">8</span></li>
                             <li>&hellip; Eloquent <span class="search-highlight">JavaScript</span>, 2nd Edition. Copyright &copy; 2015 by Marij &hellip; <span class="page">8</span></li>
@@ -303,7 +303,7 @@
                 <div class="cover"><img src="images/book-covers/learning-php-mysql-javascript.jpg" alt=""></div>
                 <div class="slideout-overlay">
                     <div class="slideout">
-                        <input type="search">
+                        <input type="search" class="searchInside">
                         <ul>
                             <li>&hellip; Eloquent <span class="search-highlight">JavaScript</span>, 2nd Edition. Copyright &copy; 2015 by Marij &hellip; <span class="page">8</span></li>
                             <li>&hellip; Language 191 PART II BROWSER Chapter 12: <span class="search-highlight">JavaScript</span> and the &hellip; <span class="page">15</span></li>
@@ -333,9 +333,7 @@
             </div>
             <footer class="cf">
                 <ul>
-                    <li class="gumroad">
-                        <a href="#" class="price">$28.40</a>
-                    </li>
+                  
                     <li class="amazon">
                         <a href="#" class="price">$29.65</a>
                     </li>
@@ -413,7 +411,7 @@
                 <div class="cover"><img src="images/book-covers/learning-php-mysql-javascript.jpg" alt=""></div>
                 <div class="slideout-overlay hidden">
                     <div class="slideout">
-                        <input type="search">
+                        <input type="search" class="searchInside">
                         <ul>
                             <li>&hellip; Eloquent <span class="search-highlight">JavaScript</span>, 2nd Edition. Copyright &copy; 2015 by Marij &hellip; <span class="page">8</span></li>
                             <li>&hellip; Language 191 PART II BROWSER Chapter 12: <span class="search-highlight">JavaScript</span> and the &hellip; <span class="page">15</span></li>
@@ -443,6 +441,9 @@
             </div>
             <footer class="cf">
               <ul>
+                <li class="gumroad">
+                    <a href="#" class="price">$26.30</a>
+                </li>
                   <li class="amazon">
                       <a href="#" class="price">$29.65</a>
                   </li>
@@ -470,6 +471,7 @@
             </div>
         </div>
     </footer>
+<script src="js/validator.js"></script>
+<script src="js/books.js"></script>
 </body>
-
 </html>
