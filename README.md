@@ -11,3 +11,6 @@
 ###15/10/2016
 1. Modified footer of contents by adding images.
 2. Modified header style.
+
+###07/02/2017
+Completed Team Project - Todd Austin
